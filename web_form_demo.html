@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Share+Tech&display=swap" rel="stylesheet">
+
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f4f4f4;
+        font-family: "Lato", sans-serif;
+      }
+
+      .login-container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 400px;
+      }
+
+      .login-container h2 {
+        color: #4caf50;
+        font-size: 28px;
+        margin-bottom: 10px;
+        font-weight: bold;
+        font-weight:850;
+      }
+
+      .login-container p {
+        margin: 10px 0;
+        font-size: 14px;
+        color: #333;
+      }
+
+      .login-container form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .login-container label {
+        text-align: left;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #333;
+      }
+
+      .login-container input[type="text"],
+      .login-container input[type="password"] {
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #e0e0e0;
+        border-radius: 4px;
+      }
+
+      .login-container input[type="submit"] {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 12px; /* TB RL */
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      .login-container input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+
+      .register-text {
+        margin-top: 10px;
+        font-size: 14px;
+        color: #0c0091;
+      }
+
+      .register-text a {
+        color: #0c0091;
+        text-decoration: none;
+      }
+
+      .register-text a:hover {
+        text-decoration: underline;
+      }
+
+      #g4g_original_ref {
+        display: inline-block;
+        height: 426px;
+      }
+
+      #subT {
+        font-weight: bold;
+        font-size: 1.1rem;
+        color: #2c2c2c;
+      }
+    </style>
+    <title>Login Form</title>
+  </head>
+  <body>
+    <div class="login-container">
+      <h2>GeeksforGeeks</h2>
+      <p id="subT">Enter your login credentials</p>
+      <form>
+        <label for="username">Username:</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Enter your Username"
+          required
+          autocomplete="off"
+        />
+
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter your Password"
+          required
+          autocomplete="off"
+        />
+
+        <input type="submit" value="Submit" />
+      </form>
+      <p class="register-text">
+        Not registered? <a href="#">Create an account</a>
+      </p>
+    </div>
+    <div>
+        <br>
+        <img id="g4g_original_ref" src="media/geeksforgeeks_original_reference.png" alt="">
+    </div>
+  </body>
+</html>

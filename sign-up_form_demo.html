@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: rgb(0, 0, 0);
+        font-family: "Share Tech", sans-serif;
+        color: #00ff00;
+      }
+      .form_container {
+        max-width: 400px;
+        margin: 0 auto;
+      }
+
+      h1 {
+        color: red;
+      }
+      input,
+      textarea {
+        background-color: rgb(34, 34, 34);
+        font-family: "Courier New", Courier, monospace;
+        color: #00ff00;
+        padding: 0.4rem 1rem;
+        margin: 0.4rem;
+        border: none;
+        border-radius: 1000px;
+      }
+      textarea {
+        border-radius: 20px;
+      }
+
+      input:hover,
+      textarea:hover {
+        box-shadow: 0 0 20px 5px #48abe088;
+        outline: 1px solid rgba(173, 216, 230, 0.506);
+      }
+
+      button {
+        border-radius: 1000px;
+        background-color: rgb(255, 0, 0);
+        border: none;
+        padding: 0.2rem 0.6rem;
+        margin-top: 1rem;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+      }
+      .form_container input[type="text"],
+      .form_container input[type="email"],
+      .form_container input[type="password"],
+      .form_container textarea {
+        border: none;
+      }
+
+      .form_container input[type="submit"] {
+        color: black;
+        font-weight: lighter;
+        background-color: #00ff00;
+      }
+      .form_container input[type="submit"]:hover {
+        color: black;
+        font-weight: bold;
+        background-color: #00ff00;
+      }
+
+      /* Kludge-fix for colouring the placeholder text */
+      ::placeholder {
+        color: red;
+        opacity: 1; /* Firefox */
+      }
+      ::-ms-input-placeholder {
+        /* Edge 12 -18 */
+        color: red;
+      }
+    </style>
+    <title>Sign-Up Form</title>
+  </head>
+  <body>
+    <div class="form_container">
+      <h1>Sign-Up Form</h1>
+
+      <form>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Username"
+          required
+        />
+        <br />
+
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email"
+          required
+          autofocus
+          autocomplete="off"
+          pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+        />
+        <textarea name="" rows="4" placeholder="Message"></textarea>
+        <br />
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>

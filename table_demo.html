@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+    <title>HTML 5 Tables</title>
+    <style>
+        body {
+            background-color: bisque;
+            font-family: "Share Tech", sans-serif;
+        }
+
+        table {
+            background-color: #fff;
+            border: 1px solid #333;
+            width:100%;
+            height:200px;
+            border-collapse: collapse;
+            /* handles text overflow nicely */
+            overflow-x: auto;
+        }
+        th, td {
+            border: 1px solid #333;
+            text-align: center;
+            padding: 10px;
+            color: navy;
+        }
+        tr:hover {
+            background-color: orange;
+        }
+        th {
+            background-color: #d4d4d4;
+        }
+        caption {
+            font-weight: bold;
+        }
+        .table_total {
+            font-weight: bold;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Table</h1>
+        <table>
+            <caption>
+                Monthly Savings
+            </caption>
+            <thead>
+                <th>Month</th>
+                <th>Income</th>
+                <th>Expenses</th>
+                <th>Savings</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>January</td>
+                    <td>£2100</td>
+                    <td>£1800</td>
+                    <td>£300</td>
+                    <tfoot></tfoot>
+                </tr>
+                <tr>
+                    <td>February</td>
+                    <td>£3000</td>
+                    <td>£1900</td>
+                    <td>£100</td>
+                    <tfoot></tfoot>
+                </tr>
+                <tr>
+                    <td>March</td>
+                    <td>£2150</td>
+                    <td>£1750</td>
+                    <td>£400</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Saving's Total:</td>
+                    <td class="table_total" colspan="3">£800</td>
+                </tr>
+            </tfoot>
+        </table>
+      </section>
+</body>
+</html>
